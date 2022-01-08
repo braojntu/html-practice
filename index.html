@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice</title>
+  </head>
+
+  <style>
+    /* add styles to border and text */
+    table,
+    tr,
+    th,
+    td {
+      border: 2px solid blue;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* inputs with type="text", select elements and textareas */
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type="submit"] {
+      background-color: lightskyblue;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* on mouse over of submit button, add a color */
+    input[type="submit"]:hover {
+      background-color: rgb(0, 110, 255);
+    }
+
+    /* Add a background color and padding around the form */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .input-container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+
+  <body>
+    <div>
+      <h1>1. HTML template bug fix</h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>Guvi Geek Network</div>
+      </div>
+    </div>
+
+    <div>
+      <h1>2. HTML template bug fix</h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>Guvi Geek Network</div>
+      </div>
+    </div>
+
+    <h1>3. Design a contact us form with all fields as required.</h1>
+
+    <div class="container">
+      <form>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Enter given name"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Enter family name"
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <br />
+
+        <label for="subject">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type your message"
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div>
+      <h1>
+        4. Use certain HTML elements to display the following in a HTML page.
+      </h1>
+      <ul style="list-style-type: disc">
+        <li>
+          Programming Language
+          <ul style="list-style-type: circle">
+            <li>
+              JavaScript
+              <ul>
+                a. Angular
+                <br />
+                b. React
+                <br />
+                c. Vue.js
+              </ul>
+            </li>
+          </ul>
+          <ul style="list-style-type: circle">
+            <li>
+              Python
+              <ul>
+                a. Django Framework
+                <br />
+                b. Flask Framework
+              </ul>
+            </li>
+          </ul>
+          <ul style="list-style-type: circle">
+            <li>
+              Java
+              <ul>
+                a. Spring
+                <br />
+                b. Maven
+                <br />
+                c. Hibernate
+                <br />
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Database
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cansandra</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>
+        5. Create an element that helps you to open the https://google.com in
+        separate new tab.
+      </h1>
+      <div class="container">
+        <h4><a href="https://google.com" target="_blank">Google</a></h4>
+      </div>
+    </div>
+
+    <div>
+      <h1>
+        6. In the form, add two radio buttons with grouping them for employee
+        type(Salaried and own business)
+      </h1>
+      <div class="container">
+        <form action="">
+          <input type="radio" name="emptype" id="salaried" value="1" />
+          <label for="salaried">Salaried</label>
+
+          <input type="radio" name="emptype" id="business" value="2" />
+          <label for="business">Own Business</label>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h1>
+        7. Design form shown in the link
+        (http://evc-cit.info/cit040/formguide/card_0.png)
+      </h1>
+    </div>
+
+    <div>
+      <h1>8. Use the table tag to design given image Click here.</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>State of health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Eating</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>2 hours of Eating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <td>Healthy</td>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tbody>
+
+        <tbody>
+          <td>Pre-Diabetes</td>
+          <td>101</td>
+          <td>126</td>
+          <td>140 to 200</td>
+        </tbody>
+
+        <tbody>
+          <td>Diabetes</td>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h1>
+        9. Write HTML input tags snippet to show default values for all Form
+        elements.
+      </h1>
+      <div class="container">
+        <label for="fname"
+          >First Name
+          <input
+            type="text"
+            name="firstname"
+            id="fname"
+            value="Default First Name"
+            placeholder="First Name"
+          />
+        </label>
+
+        <label for="lname"
+          >Last Name
+          <input
+            type="text"
+            name="firstname"
+            id="lname"
+            value="Default Last Name"
+          />
+        </label>
+
+        <p>Choose a car:</p>
+        <select id="cars" name="cars" size="3">
+          <option value="volvo">Volvo</option>
+          <option value="maruti" selected>Maruti</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+        </select>
+
+        <form>
+          <p>Kindly Select your favorite color</p>
+          <input type="radio" name="color" value="red" /> Red <br />
+          <input type="radio" name="color" value="blue" checked="checked" />
+          Blue <br />
+          <input type="radio" name="color" value="green" />Green <br />
+          <input type="radio" name="color" value="pink" />Pink <br />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <form>
+          <label for="sports"
+            >Kindly Select your favourite sports <br />
+            <input
+              type="checkbox"
+              name="sports"
+              value="cricket"
+              id="sports"
+              checked="checked"
+            />Cricket<br />
+            <input
+              type="checkbox"
+              name="sports"
+              value="tennis"
+              id="sports"
+            />Tennis<br />
+            <input
+              type="checkbox"
+              name="sports"
+              value="football"
+              id="sports"
+            />Football<br />
+            <input
+              type="checkbox"
+              name="sports"
+              value="baseball"
+              id="sports"
+            />Baseball<br />
+            <input
+              type="checkbox"
+              name="sports"
+              value="badminton"
+            />Badminton<br /><br />
+          </label>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div>
+        <h1>
+          10. In your, HTML page add the below line and Highlight it without
+          using any CSS. "HTML & CSS is awesome"
+        </h1>
+        <mark>"HTML & CSS is awesome"</mark>
+      </div>
+      <div>
+        <h1>
+          11. Create an HTML page, which should contain all types of input
+          elements.
+        </h1>
+        <div class="input-container">
+          <label for=""
+            >Text Input
+            <input type="text" />
+          </label>
+          <br />
+          <label for=""
+            >Button
+            <input type="button" value="Button" />
+          </label>
+          <br />
+          <label for=""
+            >Check Box <input type="checkbox" name="" id="" /> </label
+          ><br />
+          <label for="">Color <input type="color" name="" id="" /> </label
+          ><br />
+          <label for="">Date <input type="date" name="" id="" /> </label><br />
+          <label for=""
+            >Date Time <input type="datetime" name="" id="" /> </label
+          ><br />
+          <label for=""
+            >Date Time Local
+            <input type="datetime-local" name="" id="" /> </label
+          ><br />
+          <label for="">Email <input type="email" name="" id="" /> </label
+          ><br />
+          <label for="">File <input type="file" name="" id="" /> </label><br />
+          <label for="">Month <input type="month" name="" id="" /> </label
+          ><br />
+          <label for="">Number <input type="number" name="" id="" /> </label
+          ><br />
+          <label for="">Password <input type="password" name="" id="" /> </label
+          ><br />
+          <label for="">Radio <input type="radio" name="" id="" /> </label
+          ><br />
+          <label for="">Range <input type="range" name="" id="" /> </label
+          ><br />
+          <label for="">Reset <input type="reset" value="" /> </label><br />
+          <label for="">Search <input type="search" name="" id="" /> </label
+          ><br />
+          <label for="">Submit <input type="submit" value="Submit" /> </label
+          ><br />
+          <label for="">Telephone <input type="tel" name="" id="" /> </label
+          ><br />
+          <label for="">Time <input type="time" name="" id="" /> </label><br />
+          <label for="">URL <input type="url" name="" id="" /> </label><br />
+          <label for="">Week <input type="week" name="" id="" /> </label><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
